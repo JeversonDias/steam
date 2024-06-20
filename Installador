@@ -48,3 +48,6 @@ mv "/userdata/mimeapps.list" "/userdata/system/.config"
 batocera-save-overlay
 # Mensagem de conclusão
 echo "by @JCGAMESCLASSICOS"
+sleep 3
+pkill xterm
+fi
