@@ -42,7 +42,7 @@ chmod +x /userdata/system/.dev/scripts/hydra.sh
 curl -LJO https://github.com/JeversonDias/steam/raw/main/libcups.so.2 -o /usr/lib/libcups.so.2
 mv /userdata/libcups.so.2 /usr/lib
 curl -O https://raw.githubusercontent.com/JeversonDias/steam/main/mimeapps.list
-mv "/userdata/mimeapps.list" "/userdata/system/.config"
+mv "mimeapps.list" "/userdata/system/.config"
 
 #batocera-settings-manager --apply steam
 batocera-save-overlay
