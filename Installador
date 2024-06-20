@@ -46,6 +46,5 @@ mv "/userdata/mimeapps.list" "/userdata/system/.config"
 
 #batocera-settings-manager --apply steam
 batocera-save-overlay
-xterm -bg "#0033ff" -fg white -fullscreen -fa "DejaVu Sans Mono:size=34" -e "echo 'Baixado e instalado...'; sleep 5"
 # Mensagem de conclusão
 echo "by @JCGAMESCLASSICOS"
