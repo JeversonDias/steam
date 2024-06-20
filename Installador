@@ -17,7 +17,7 @@ chmod +x "$DESTINO/hydralauncher-1.2.4.AppImage"
 
 mkdir -p /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps
 curl -LJO https://raw.githubusercontent.com/JeversonDias/steam/main/hydralauncher.png -o /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png
-
+mv /userdata/hydralauncher.png "/userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps"
 echo "[Desktop Entry]
 Version=1.0.0
 Icon="/userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png"
@@ -40,6 +40,10 @@ export DISPLAY=:0.0
 chmod +x /userdata/system/.dev/scripts/hydra.sh
 #Baixar lib necessária
 curl -LJO https://github.com/JeversonDias/steam/raw/main/libcups.so.2 -o /usr/lib/libcups.so.2
+mv /userdata/libcups.so.2 /usr/lib
+curl -O https://raw.githubusercontent.com/JeversonDias/steam/main/mimeapps.list
+mv /userdata/mimeapps.list /userdata/system/.configs
+
 #batocera-settings-manager --apply steam
 batocera-save-overlay
 xterm -bg "#0033ff" -fg white -fullscreen -fa "DejaVu Sans Mono:size=34" -e "echo 'Baixado e instalado...'; sleep 5"
