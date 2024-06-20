@@ -1,0 +1,47 @@
+#!/bin/bash
+#Jeverson Dias && Cauã B. Dias >> @JCGAMESCLASSICOS
+# URL do arquivo para download
+URL="https://github.com/hydralauncher/hydra/releases/download/v1.2.4/hydralauncher-1.2.4.AppImage"
+
+# Diretório de destino
+DESTINO="/userdata/system/.dev/scripts/apps/hydra"
+
+# Criar o diretório de destino, se não existir
+mkdir -p "$DESTINO"
+
+# Baixar o arquivo e salvá-lo no diretório de destino
+curl -L -o "$DESTINO/hydralauncher-1.2.4.AppImage" "$URL"
+
+# Dar permissão de execução ao arquivo baixado
+chmod +x "$DESTINO/hydralauncher-1.2.4.AppImage"
+
+mkdir -p /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps
+curl -LJO https://raw.githubusercontent.com/JeversonDias/steam/main/hydralauncher.png -o /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png
+
+echo "[Desktop Entry]
+Version=1.0.0
+Icon="/userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png"
+Exec=/userdata/system/.dev/scripts/./hydra.sh
+Type=Application
+Terminal=False
+Name=Hydra Launcher
+" > /usr/share/applications/hydra.desktop
+ln -s /usr/share/applications/hydra.desktop /userdata/hydra.desktop
+#menu://applications/
+
+#Criemos o Executável para o AppRun
+
+echo "#!/bin/bash
+
+export DISPLAY=:0.0
+
+/userdata/system/.dev/scripts/apps/hydra/hydralauncher-1.2.4.AppImage --no-sandbox" > /userdata/system/.dev/scripts/hydra.sh
+
+chmod +x /userdata/system/.dev/scripts/hydra.sh
+#Baixar lib necessária
+curl -LJO https://github.com/JeversonDias/steam/raw/main/libcups.so.2 -o /usr/lib/libcups.so.2
+#batocera-settings-manager --apply steam
+batocera-save-overlay
+xterm -bg "#0033ff" -fg white -fullscreen -fa "DejaVu Sans Mono:size=34" -e "echo 'Baixado e instalado...'; sleep 5"
+# Mensagem de conclusão
+echo "by @JCGAMESCLASSICOS"
