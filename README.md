@@ -24,6 +24,12 @@ curl -fsSL https://raw.githubusercontent.com/JeversonDias/steam/main/Installador
 ```
 <br><br>
 
+# Adicionar mais de 38.000 fontes fontes para downloadas 
 
+```bash
+
+https://raw.githubusercontent.com/KekitU/rutracker-hydra-links/main/all_categories.json
+
+```
 
 # Steam by Hydra Launcher
