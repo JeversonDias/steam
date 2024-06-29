@@ -2,7 +2,7 @@
 <br>
 <br>
 
-# [Assista ao vídeo](https://www.youtube.com/watch?v=KKdr1KZeFqk)
+# [VIDEO](https://www.youtube.com/watch?v=KKdr1KZeFqk)
 <br>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&size=50&duration=4000&pause=1000&color=7dff33&center=true&vCenter=true&random=false&width=1000&lines=Hello%2C+my+name+is+Jeverson+Dias;I'm+38+years+old;I'm+a+Software+Developer;I'm+from+Brazil;welcome%3A)](https://git.io/typing-svg)
