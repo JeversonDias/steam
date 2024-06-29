@@ -11,10 +11,10 @@ DESTINO="/userdata/system/.dev/scripts/apps/hydra"
 mkdir -p "$DESTINO"
 
 # Baixar o arquivo e salvá-lo no diretório de destino
-curl -L -o "$DESTINO/hydralauncher-1.2.4.AppImage" "$URL"
+curl -L -o "$DESTINO/hydralauncher-2.0.2.AppImage" "$URL"
 
 # Dar permissão de execução ao arquivo baixado
-chmod +x "$DESTINO/hydralauncher-1.2.4.AppImage"
+chmod +x "$DESTINO/hydralauncher-2.0.2.AppImage"
 
 mkdir -p /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps
 curl -LJO https://raw.githubusercontent.com/JeversonDias/steam/main/hydralauncher.png -o /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png
