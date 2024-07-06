@@ -20,7 +20,7 @@
 
 <br><br>
 # Hydra Launcher para Via Batocera v.39 & v.40
-# terminal deve estar abarto na pasta /userdata
+# terminal deve estar abarto em /userdata
 ```bash
 curl -fsSL https://raw.githubusercontent.com/JeversonDias/steam/main/Installador | bash
 ```
