@@ -2,7 +2,7 @@
 #Jeverson Dias && Cauã B. Dias >> @JCGAMESCLASSICOS
 # URL do arquivo para download
 #URL="https://github.com/hydralauncher/hydra/releases/download/v1.2.4/hydralauncher-1.2.4.AppImage"
-URL="https://github.com/hydralauncher/hydra/releases/download/v2.0.2/hydralauncher-2.0.2.AppImage"
+URL="https://github.com/hydralauncher/hydra/releases/download/v2.0.2/hydralauncher-2.0.3.AppImage"
 
 # Diretório de destino
 DESTINO="/userdata/system/.dev/scripts/apps/hydra"
@@ -11,10 +11,10 @@ DESTINO="/userdata/system/.dev/scripts/apps/hydra"
 mkdir -p "$DESTINO"
 
 # Baixar o arquivo e salvá-lo no diretório de destino
-curl -L -o "$DESTINO/hydralauncher-2.0.2.AppImage" "$URL"
+curl -L -o "$DESTINO/hydralauncher-2.0.3.AppImage" "$URL"
 
 # Dar permissão de execução ao arquivo baixado
-chmod +x "$DESTINO/hydralauncher-2.0.2.AppImage"
+chmod +x "$DESTINO/hydralauncher-2.0.3.AppImage"
 
 mkdir -p /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps
 curl -LJO https://raw.githubusercontent.com/JeversonDias/steam/main/hydralauncher.png -o /userdata/system/.dev/scripts/apps/hydra/share/icons/hicolor/0x0/apps/hydralauncher.png
